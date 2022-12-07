@@ -1,1 +1,1 @@
-console.log("howdy!"),console.log("baby");
+(()=>{const e=document.querySelector("#content"),n=document.createElement("button");n.innerHTML="Home";const t=document.createElement("p");t.innerText="The Best Korean BBQ in the Bay Area!";const a=document.createElement("p");a.innerText="About Us: We are a Korean-American family owned restaurant based in Oakland, CA. We have been open for over ten years and continue to serve the best Korean BBQ in the Bay Area!";const o=document.createElement("img");e.appendChild(n),e.appendChild(t),e.appendChild(a),e.appendChild(o)})();
