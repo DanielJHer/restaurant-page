@@ -1,15 +1,20 @@
+import renderBtns from "./functions";
+
 const renderContact = () => {
+  const mainDiv = document.querySelector("#content");
+  mainDiv.innerHTML = "";
+
+  // render buttons
+  renderBtns();
+
+  // render html content
   const headline = document.createElement("p");
   headline.innerText = "Contact us!";
 
-  const aboutUs = document.createElement("p");
-  aboutUs.innerText = "Our contact info!";
+  const paragraph = document.createElement("p");
+  paragraph.innerText = "Our contact info!";
 
   const img = document.createElement("img");
-
-  contentDiv.appendChild(headline);
-  contentDiv.appendChild(aboutUs);
-  contentDiv.appendChild(img);
 };
 
 export default renderContact;
