@@ -1,5 +1,10 @@
-import renderHome from "./home";
+import { renderBtns, renderHomeHTML } from "./functions";
 
 const createPage = (() => {
-  renderHome();
+  const mainDiv = document.querySelector("#content");
+
+  mainDiv.appendChild(renderBtns());
+
+  // render html content
+  mainDiv.appendChild(renderHomeHTML());
 })();
