@@ -1,0 +1,28 @@
+:root {
+  background-color: grey;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  margin-top: 5px;
+}
+
+nav {
+  padding: 1rem;
+}
+
+main {
+  margin: 5rem;
+}
+
+#footer {
+  display: flex;
+  position: absolute;
+  margin-top: 80%;
+}

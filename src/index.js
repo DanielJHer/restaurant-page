@@ -1,10 +1,27 @@
-import { renderBtns, renderHomeHTML } from "./functions";
+import initRender from "./modules/initRender";
+import renderHome from "./modules/home";
+import renderMenu from "./modules/menu";
+import renderContact from "./modules/contact";
 
-const createPage = (() => {
-  const mainDiv = document.querySelector("#content");
+import "./styles/initRender.css";
+import "./styles/home.css";
+import "./styles/menu.css";
+import "./styles/contact.css";
 
-  mainDiv.appendChild(renderBtns());
+const loadPage = (() => {
+  // initial render
+  initRender();
 
-  // render html content
-  mainDiv.appendChild(renderHomeHTML());
+  // render homepage
+  renderHome();
+
+  // adding event listeners for buttons
+  const homeBtn = document.getElementById("homeBtn");
+  homeBtn.addEventListener("click", renderHome);
+
+  const menuBtn = document.getElementById("menuBtn");
+  menuBtn.addEventListener("click", renderMenu);
+
+  const contactBtn = document.getElementById("contactBtn");
+  contactBtn.addEventListener("click", renderContact);
 })();
