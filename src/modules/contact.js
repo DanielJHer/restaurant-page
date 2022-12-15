@@ -1,8 +1,5 @@
 const renderContact = () => {
-  mainDiv.innerHTML = "";
-
-  // render html content
-  const contactDiv = document.createElement("div");
+  infoDiv.innerHTML = "";
 
   const headline = document.createElement("p");
   headline.innerText = "Contact us!";
@@ -13,11 +10,9 @@ const renderContact = () => {
 
   const img = document.createElement("img");
 
-  contactDiv.appendChild(headline);
-  contactDiv.appendChild(paragraph);
-  contactDiv.appendChild(img);
-
-  mainDiv.appendChild(contactDiv);
+  infoDiv.appendChild(headline);
+  infoDiv.appendChild(paragraph);
+  infoDiv.appendChild(img);
 };
 
 export default renderContact;

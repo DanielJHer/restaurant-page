@@ -1,6 +1,6 @@
 const renderMenu = () => {
   // render html content
-  mainDiv.innerHTML = "";
+  infoDiv.innerHTML = "";
   const menuDiv = document.createElement("div");
 
   const headline = document.createElement("p");
@@ -11,11 +11,9 @@ const renderMenu = () => {
 
   const img = document.createElement("img");
 
-  menuDiv.appendChild(headline);
-  menuDiv.appendChild(paragraph);
-  menuDiv.appendChild(img);
-
-  mainDiv.appendChild(menuDiv);
+  infoDiv.appendChild(headline);
+  infoDiv.appendChild(paragraph);
+  infoDiv.appendChild(img);
 };
 
 export default renderMenu;

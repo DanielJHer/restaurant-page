@@ -1,3 +1,12 @@
+const renderBackground = () => {
+  const background = document.createElement("img");
+  background.src = "images/background.jpg";
+  background.alt = "Oops!";
+  background.classList.add("backgroundPic");
+
+  return background;
+};
+
 const renderBtns = () => {
   const nav = document.createElement("nav");
 
@@ -26,10 +35,10 @@ const renderBtns = () => {
   return nav;
 };
 
-const renderMain = () => {
-  const mainDiv = document.createElement("main");
-  mainDiv.setAttribute("id", "mainDiv");
-  return mainDiv;
+const renderInfo = () => {
+  const infoDiv = document.createElement("div");
+  infoDiv.setAttribute("id", "infoDiv");
+  return infoDiv;
 };
 
 const renderFooter = () => {
@@ -52,9 +61,12 @@ const renderFooter = () => {
 };
 
 const initRender = () => {
+  const body = document.querySelector("body");
+  body.appendChild(renderBackground());
+
   const content = document.querySelector("#content");
   content.appendChild(renderBtns());
-  content.appendChild(renderMain());
+  content.appendChild(renderInfo());
   content.appendChild(renderFooter());
 };
 
