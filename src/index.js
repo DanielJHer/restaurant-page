@@ -16,12 +16,12 @@ const loadPage = (() => {
   renderHome();
 
   // adding event listeners for buttons
-  const homeBtn = document.getElementById("homeBtn");
+  const homeBtn = document.querySelector("#homeBtn");
   homeBtn.addEventListener("click", renderHome);
 
-  const menuBtn = document.getElementById("menuBtn");
+  const menuBtn = document.querySelector("#menuBtn");
   menuBtn.addEventListener("click", renderMenu);
 
-  const contactBtn = document.getElementById("contactBtn");
+  const contactBtn = document.querySelector("#contactBtn");
   contactBtn.addEventListener("click", renderContact);
 })();

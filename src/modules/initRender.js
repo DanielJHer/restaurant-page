@@ -43,13 +43,13 @@ const renderInfo = () => {
 
 const renderFooter = () => {
   const footerDiv = document.createElement("div");
-  footerDiv.setAttribute("id", "footer");
+  footerDiv.classList.add("footerDiv");
 
   const copyrightText = document.createElement("span");
   copyrightText.innerText = "Copyright © Daniel Her 2022";
 
   const gitBtn = document.createElement("button");
-  gitBtn.innerHTML = "Github";
+  gitBtn.innerText = "Github";
   gitBtn.onclick = () => {
     location.href = "https://github.com/DanielJHer";
   };

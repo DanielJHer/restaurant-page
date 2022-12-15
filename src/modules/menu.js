@@ -1,7 +1,6 @@
 const renderMenu = () => {
   // render html content
   infoDiv.innerHTML = "";
-  const menuDiv = document.createElement("div");
 
   const headline = document.createElement("p");
   headline.innerText = "Our Menu!";
