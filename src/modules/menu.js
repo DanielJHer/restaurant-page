@@ -6,7 +6,8 @@ const renderMenu = () => {
   headline.innerText = "Our Menu!";
 
   const paragraph = document.createElement("p");
-  paragraph.innerText = "check out our amazing items";
+  paragraph.innerHTML =
+    "Check out our amazing items! <br> <br> Pork...............$15 <br><br> Beef...............$20 <br><br> Chicken...............$18 <br><br> AYCE...............$30";
 
   const img = document.createElement("img");
 

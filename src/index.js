@@ -4,8 +4,6 @@ import renderMenu from "./modules/menu";
 import renderContact from "./modules/contact";
 
 import "./styles/initRender.css";
-import "./styles/home.css";
-import "./styles/menu.css";
 import "./styles/contact.css";
 
 const loadPage = (() => {

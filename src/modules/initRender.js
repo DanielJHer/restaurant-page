@@ -7,7 +7,7 @@ const renderBackground = () => {
   return background;
 };
 
-const renderBtns = () => {
+const renderNav = () => {
   const nav = document.createElement("nav");
 
   const headline = document.createElement("p");
@@ -18,19 +18,26 @@ const renderBtns = () => {
 
   const homeBtn = document.createElement("button");
   homeBtn.setAttribute("id", "homeBtn");
+  homeBtn.classList.add("navBtn");
   const menuBtn = document.createElement("button");
   menuBtn.setAttribute("id", "menuBtn");
+  menuBtn.classList.add("navBtn");
   const contactBtn = document.createElement("button");
   contactBtn.setAttribute("id", "contactBtn");
+  contactBtn.classList.add("navBtn");
 
+  const btnsDiv = document.createElement("div");
+  btnsDiv.classList.add("btnsDiv");
   homeBtn.innerHTML = "Home";
-  nav.appendChild(homeBtn);
+  btnsDiv.appendChild(homeBtn);
 
   menuBtn.innerHTML = "Menu";
-  nav.appendChild(menuBtn);
+  btnsDiv.appendChild(menuBtn);
 
   contactBtn.innerHTML = "Contact";
-  nav.appendChild(contactBtn);
+  btnsDiv.appendChild(contactBtn);
+
+  nav.appendChild(btnsDiv);
 
   return nav;
 };
@@ -38,6 +45,7 @@ const renderBtns = () => {
 const renderInfo = () => {
   const infoDiv = document.createElement("div");
   infoDiv.setAttribute("id", "infoDiv");
+  infoDiv.classList.add("infoDiv");
   return infoDiv;
 };
 
@@ -48,11 +56,13 @@ const renderFooter = () => {
   const copyrightText = document.createElement("span");
   copyrightText.innerText = "Copyright © Daniel Her 2022";
 
-  const gitBtn = document.createElement("button");
-  gitBtn.innerText = "Github";
+  const gitBtn = document.createElement("img");
+  gitBtn.src = "images/github-mark-white.png";
+  gitBtn.alt = "oops!";
   gitBtn.onclick = () => {
     location.href = "https://github.com/DanielJHer";
   };
+  gitBtn.classList.add("gitBtn");
 
   footerDiv.appendChild(copyrightText);
   footerDiv.appendChild(gitBtn);
@@ -65,7 +75,7 @@ const initRender = () => {
   body.appendChild(renderBackground());
 
   const content = document.querySelector("#content");
-  content.appendChild(renderBtns());
+  content.appendChild(renderNav());
   content.appendChild(renderInfo());
   content.appendChild(renderFooter());
 };

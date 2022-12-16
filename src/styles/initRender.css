@@ -2,12 +2,13 @@
   box-sizing: border-box;
 }
 :root {
-  background-color: grey;
+  background-color: black;
 }
 
 body {
   display: flex;
-  position: absolute;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .backgroundPic {
@@ -16,12 +17,29 @@ body {
   height: 100%;
 }
 
+.navBtn {
+  font-family: inherit;
+  font-size: larger;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+  border-style: none;
+  outline: none;
+  margin: 1rem;
+  border-bottom: 1px transparent;
+}
+
+.navBtn:hover {
+  border-bottom: 1px white solid;
+}
+
 #content {
   display: flex;
   position: absolute;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .headline {
@@ -32,20 +50,43 @@ body {
 }
 
 nav {
-  margin: 1rem;
-}
-
-#infoDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  width: 100%;
   position: relative;
-  padding: 10%;
-  background-color: black;
-  opacity: 60%;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.686);
+  padding: 3%;
   font-size: larger;
 }
 
-.footerDiv {
+.infoDiv {
   position: relative;
-  margin-top: 80%;
+  padding: 8%;
+  background-color: rgba(0, 0, 0, 0.611);
+  font-size: larger;
+  width: 100%;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 49%;
+  width: 100%;
+  padding: 3%;
+  background-color: rgba(0, 0, 0, 0.611);
+  font-size: medium;
+}
+
+.gitBtn {
+  margin-left: 0.7rem;
+  width: 1.25rem;
+}
+
+.gitBtn:hover {
+  cursor: pointer;
+  opacity: 50%;
 }
