@@ -1,5 +1,5 @@
 # restaurant page
 
-Restaurant page rendered with HTML using only Vanilla JS.
+Restaurant page with Vanilla JS.
 
 Webpack used as a module bundler.
